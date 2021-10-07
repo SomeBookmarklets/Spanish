@@ -1,0 +1,1 @@
+javascript:(()=>{ function chars(){var a=document.getElementsByTagName("input");var b=document.getElementsByTagName("b");for(var c=2;c<a.length;c++){a.item(c).placeholder=a.item(c).dataset.length;b.item(c-2).innerText=a.item(c).dataset.length-a.item(c).value.length}}chars();$("input").on("input",chars); })();
