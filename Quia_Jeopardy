@@ -1,0 +1,1 @@
+javascript:(()=>{ var thing=document.getElementsByClassName("CBQuestionGridBox");for(i=0;i<thing.length;i++){thing[i].classList.replace("unAnswered","correct")}document.getElementsByClassName("playerPoints")[0].innerText=prompt("Player 1 Score","0");document.getElementsByClassName("playerPoints")[1].innerText=prompt("Player 2 Score","0"); })();
