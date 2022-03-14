@@ -4,8 +4,15 @@
 		<title>Bookmarklets</title>
 	</head>
 	<body>
+	<script>
+		let base="https://somebookmarklets.github.io/Spanish/";
+		let pages=["Conjuguemos_GradedPractice","Manual Editing","Quia_Jeopardy","Quia_Quiz","SpanishDict_Quiz"];
+		for (i=0;i<pages.length;i++) {
+			let page=pages[i];
+			document.body.innerHTML=document.body.innerHTML+`<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='${base}${page}'})();">${page}</a>\n`
+		}
+	</script>
 		<h1>Spanish Bookmarklets</h1>
 		<p>Drag bookmarklets like this <a href="javascript:alert('it works')">test</a> into your bookmarks bar. Toggle with ctrl + shift + b</p>
-		<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://somebookmarklets.github.io/Spanish/Conjuguemos_GradedPractice'})();">Graded Practice</a>
 	</body>
 </html>
